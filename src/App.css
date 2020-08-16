@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+* {
+  box-sizing: border-box;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -9,4 +11,37 @@ nav {
   min-height: 10vh;
   background: rgb(123, 126, 128);
   color: white;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  text-align: left;  
+}
+.column3 {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+.avatar {
+  border: 0pt none; 
+  float: left; 
+  padding-right: 10px; 
+  padding-bottom: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

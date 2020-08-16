@@ -6,8 +6,6 @@ import Profile from './Profile'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { data } from './data.js'
 
-var site = data.site;
-var profile = data.profile;
 var metadata = data.data.metadata;
 var records = data.data.features;
 
@@ -27,28 +25,27 @@ function App() {
 }
 
 const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-    <center>
-      <div>
-
-        <h2>{metadata.title}</h2>
-
+  <center>
+    <h2>{metadata.title}</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>Place</th>
+          <th>Magnitude</th>
+          <th>Time</th>
+        </tr>
         {records.map((dataDetail, index) => {
-          return (<div key={index}>
-            <Link to={`Details/${index}`}>{dataDetail.properties.place}</Link>,
-            {dataDetail.properties.mag}, {(new Date(dataDetail.properties.time)).getUTCFullYear()}-
-            {("0" + (new Date(dataDetail.properties.time).getUTCMonth() + 1)).slice(-2)}-{("0" + (new Date(dataDetail.properties.time).getUTCDate())).slice(-2)}
-          </div>
+          return (
+            <tr key={index}>
+              <td><Link to={`Details/${index}`}>{dataDetail.properties.place}</Link></td>
+              <td style={{width: "50px", textAlign: "center"}}>{dataDetail.properties.mag}</td>
+              <td>{(new Date(dataDetail.properties.time)).getUTCFullYear()}-{("0" + (new Date(dataDetail.properties.time).getUTCMonth() + 1)).slice(-2)}-{("0" + (new Date(dataDetail.properties.time).getUTCDate())).slice(-2)}</td>
+            </tr>
           );
         })}
-
-        <p>{data.site.title}</p>
-        {/*<img alt="Background" src={data.site.heroImage}></img>*/}
-
-      </div>
-    </center>
-  </div>
+      </tbody>
+    </table>
+  </center>
 );
 
 export default App;
