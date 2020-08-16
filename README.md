@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Thanks realtor
+
+Thanks to devs at realtor.com for for giving this opportunity to work on this cool and simple project. I learned many interesting things about React and JavsScript while doing this project. 
+
 
 ## Available Scripts
 
