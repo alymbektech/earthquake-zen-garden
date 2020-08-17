@@ -1,7 +1,12 @@
 ## Thanks realtor
 
-Thanks to devs at realtor.com for giving me this opportunity to work on this cool and simple project. I learned many interesting things about React and JavsScript while doing this project. 
+Thanks to devs at realtor.com for giving me this opportunity to work on this cool and simple project. I learned many interesting things about React(react-router-dom, components, JSX) and JavsScript while doing this project. 
 
+
+## Screenshots
+![alt text](screenshots/home.png "Description goes here")
+![alt text](screenshots/details.png "Description goes here")
+![alt text](screenshots/profile.png "Description goes here")
 
 ## Available Scripts
 
