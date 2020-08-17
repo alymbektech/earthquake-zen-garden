@@ -39,7 +39,12 @@ const Home = () => (
             <tr key={index}>
               <td><Link to={`Details/${index}`}>{dataDetail.properties.place}</Link></td>
               <td style={{width: "50px", textAlign: "center"}}>{dataDetail.properties.mag}</td>
-              <td>{(new Date(dataDetail.properties.time)).getUTCFullYear()}-{("0" + (new Date(dataDetail.properties.time).getUTCMonth() + 1)).slice(-2)}-{("0" + (new Date(dataDetail.properties.time).getUTCDate())).slice(-2)}</td>
+              <td>{(new Date(dataDetail.properties.time)).getUTCFullYear()}-
+              {("0" + (new Date(dataDetail.properties.time).getUTCMonth() + 1)).slice(-2)}-
+              {("0" + (new Date(dataDetail.properties.time).getUTCDate())).slice(-2)}T
+              {("0" + (new Date(dataDetail.properties.time).getHours()-3)).slice(-2)}:
+              {("0" + (new Date(dataDetail.properties.time).getMinutes())).slice(-2)}:
+              {("0" + (new Date(dataDetail.properties.time).getSeconds())).slice(-2)}</td>
             </tr>
           );
         })}
