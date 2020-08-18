@@ -1,14 +1,16 @@
-## Thanks realtor
+## Getting Started :sunglasses:
+
+### Thanks realtor
 
 Thanks to devs at realtor.com for giving me this opportunity to work on this cool and simple project. I learned many interesting things about React(react-router-dom, components, JSX) and JavsScript while doing this project. 
 
 
-## Screenshots
+### Screenshots
 ![alt text](screenshots/home.png "Description goes here")
 ![alt text](screenshots/details.png "Description goes here")
 ![alt text](screenshots/profile.png "Description goes here")
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
